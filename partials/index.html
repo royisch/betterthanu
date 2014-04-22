@@ -1,0 +1,30 @@
+ <div ng-controller="DemoCtrl">
+     <nav class="navbar navbar-inverse page-wrap" role="navigation" ng-class="{pageWrapSlide : openMenu==true}">
+         <div class="container-fluid">
+             <!-- Brand and toggle get grouped for better mobile display -->
+             <div class="navbar-header">
+                 <a class="navbar-brand pull-right">BETter than U</a>
+                 <button type="button" class="navbar-toggle  pull-left" ng-click="menuClicked()" data-target="#bs-example-navbar-collapse-1">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+             </div>
+             </div>
+         </nav>
+
+ <!-- Navigation   -->
+     <div class="modal-like" ng-show="openMenu" ng-click="closeMenu()"></div>
+     <div id="slide-menu" ng-show="openMenu" class="navigation slide-conf" ng-class="{slide : openMenu==true}">
+     <ul>
+         <li class="menu-list-item" ng-click="changePage(2);">Tables</li>
+         <li class="menu-list-item">Fixtures</li>
+         <li class="menu-list-item" ng-click="changePage(0);">Create Group</li>
+     </ul>
+ </div>
+ <!-- Content panel -->
+     <div class="slide-animate-container" ng-controller="createGroupCtrl">
+         <div class="slide-animate" ng-include="template.url"></div>
+     </div>
+
+</div>

@@ -1,0 +1,32 @@
+{
+  "name": "testApp",
+  "version": "0.2.0",
+  "author": "Julien Bouquillon <julien@revolunet.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/revolunet/angular-carousel.git"
+  },
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://revolunet.mit-license.org"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.8.0",
+    "grunt-contrib-sass": "^0.7.2",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-uglify": "^0.3.2",
+    "grunt-conventional-changelog": "~1.1.0",
+    "load-grunt-tasks": "~0.3.0",
+    "requirejs": "~2.1.11",
+    "bower":"*",
+    "express": "~3.4.8"
+  }
+}

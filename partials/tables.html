@@ -1,0 +1,53 @@
+<div ng-controller="tableCtrl">
+<table ng-repeat="group in groups" style="width:100%;">
+<caption >
+    <div >
+        <div style="background-color: red">
+            <span >GROUP A</span>
+            <span ></span>
+        </div>
+    </div>
+</caption>
+<colgroup>
+    <col >
+    <col >
+    <col >
+    <col >
+    <col >
+    <col >
+    <col >
+    <col >
+    <col >
+    <col >
+</colgroup>
+<thead>
+<tr class="table-item">
+    <th title="POS" class="table-item-piece">POS</th>
+    <th  title="TEAM" class="table-item-piece">TEAM</th>
+    <th title="PLD" class="table-item-piece">G</th>
+    <th title="W" class="table-item-piece">W</th>
+    <th title="D" class="table-item-piece">D</th>
+    <th title="L" class="table-item-piece">L</th>
+    <th title="A" class="table-item-piece">GLS</th>
+    <th title="PTS" class="table-item-piece">PTS</th>
+</tr>
+</thead>
+<tbody>
+
+<!--<tr class="strap1 -interact text-h6">-->
+<tr ng-repeat="team in group" class="table-item">
+    <td class="table-item-piece"><strong>{{team.rank}}</strong></td>
+    <td class="table-item-piece"><strong>{{team.teamName}}</strong></td>
+    <td class="table-item-piece"><strong>{{team.gamesPlayed}} </strong></td>
+    <td class="table-item-piece"><strong>{{team.gamesWon}}</strong></td>
+    <td class="table-item-piece"><strong>{{team.gamesDraw}}</strong></td>
+    <td class="table-item-piece"><strong>{{team.gamesLost}}</strong></td>
+    <td class="table-item-piece"><strong>{{team.goals}}</strong></td>
+    <td class="table-item-piece"><strong>{{team.points}}</strong></td>
+
+</tr>
+
+<!--<tr class="strap1 -interact text-h6">-->
+</tbody>
+</table>
+</div>

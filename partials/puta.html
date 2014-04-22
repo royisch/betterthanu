@@ -1,0 +1,20 @@
+<div class="form">
+    <div>Search Betting friends:</div>
+    <br>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search friends">
+    </div>
+    <button type="button" ng-click="search()" ng-show="!searching" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+
+    <ul style="margin-left: -35px;height: 150px;overflow-y: scroll;">
+        <li ng-repeat="user in users" class="search-list-item"><div class="search-user-name" ng-click="userSelected($index)">{{user.name}}</div></li>
+    </ul>
+    <br>
+    <br>
+    <button type="button" ng-click="clearSearch()" ng-show="searching" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-remove"></span> clear search
+    </button>
+
+</div>
