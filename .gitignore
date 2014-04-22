@@ -1,0 +1,12 @@
+*.min.js
+*.min.css
+*.css
+*.iml
+*.iws
+*.ipr
+.idea/
+.sass-cache/
+.project
+.classpath
+bower_components/**/*
+node_modules/**/*
